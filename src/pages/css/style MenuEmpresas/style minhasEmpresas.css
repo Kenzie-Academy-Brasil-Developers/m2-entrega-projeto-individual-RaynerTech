@@ -1,0 +1,113 @@
+.minhasEmpresas{
+    min-height: 400px;
+    max-width: 90%;
+    max-height: 80%;
+
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.minhasEmpresas::-webkit-scrollbar{
+    background-color: var(--color-1);
+    border-radius: 20px;
+    width: 5px;
+}
+.minhasEmpresas::-webkit-scrollbar-thumb{
+    background-color: var(--color-2);
+    border-radius: 20px;
+}
+.minhasEmpresas li{
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    border: solid;
+    gap: 3px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    color: var(--color-1);
+    background-color: var(--color-2);
+}
+.h2MinhasEmpresas{
+    font-size: var(--title-2-size) ;
+    font-weight: var(--title-2-weight);
+}
+.pMinhasEmpresas{
+    font-size: var(--text-3-size) ;
+    font-weight: var(--text-3-weight);
+
+    text-align: center;
+
+
+}
+.spanMinhasEmpresas{
+
+}
+/*SELECT FILTER*/
+.selectFilter{
+    height: 30px;
+    color: var(--color-1);
+    background: var(--color-2);
+    border: solid 1px;
+    border-radius: 5px;
+}
+.btnSelect{
+    height: 30px;
+    min-width: 100px;
+    
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: solid 1px var(--color-1);
+    border-radius:5px;
+    font-size: var(--text-2-size);
+    font-weight: var(--text-1-weight);
+    cursor: pointer;
+    margin-left: 20px;
+}
+.btnSelect:hover{
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+
+/*BTNS FILTER*/
+
+.sectionFilter{
+    display: flex;
+    max-width: 250px;
+
+    overflow: hidden;
+    overflow-x: scroll;
+
+  
+}
+.sectionFilter::-webkit-scrollbar{
+    background-color: var(--color-1);
+    height: 5px;
+    border-radius: 20px;
+}
+.sectionFilter::-webkit-scrollbar-thumb{
+    background-color:var(--color-2);
+    border-radius: 20px;
+}
+.sectionFilter button{
+    height: 30px;
+    min-width: 100px;
+    
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: solid 1px var(--color-1);
+    border-radius:5px;
+    font-size: var(--text-2-size);
+    font-weight: var(--text-1-weight);
+    cursor: pointer;
+    margin-left: 20px;
+}
+.sectionFilter button:hover{
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+

@@ -7,7 +7,18 @@
 })(jQuery); // end of jQuery name space
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  let elems = document.querySelectorAll('.sidenav');
-  let instances = M.Sidenav.init(elems, options);
+
+
+$('.carousel').carousel();
+setInterval(function() {
+  $('.carousel').carousel('next');
+}, 2000); // every 2 seconds
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
+
+
+$(document).ready(function(){
+  $('.slider').slider();
 });

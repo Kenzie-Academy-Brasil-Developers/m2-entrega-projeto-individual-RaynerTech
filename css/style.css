@@ -1,3 +1,5 @@
+@import '/src/style/colors.css';
+
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -11,4 +13,23 @@
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+
+.section-slide .slider .slides{
+  background-color: transparent;
+  margin: 0;
+  height: 700px;
+}
+.section-slide .slider .slides li img{
+  height: 100% !important;
+  width: 100% !important;
+  background-position: top;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+}
+
+
+.indicator-item.active{
+  background-color:var(--color-2)!important ;
 }

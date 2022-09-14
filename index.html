@@ -1,77 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Painel</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="/src/style/style.css">
-  <script defer src="/src/script/model/darkmodel.js"></script>
+    <title>Rayner Tech</title>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <div class="darkmodecontainer right"></div>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Empresas</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
+  <header>
+ 
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+             
+              <a id="logo-container" href="#" class="brand-logo"><img src="/src/assets/cubo-removebg-preview.png" alt="."></a>
+              <ul class="right hide-on-med-and-down">
+                <button data-login="cadasBtn" id="btnCadastro" class="buttonsGeneral">Cadastrar</button>
+                <button data-login="loginBtn" id="btnLogin" class="buttonsGeneral">Login</button>
+              </ul>
+              <ul id="nav-mobile" class="sidenav">
+                <button data-login="cadasBtn" id="btnCadastro" class="buttonsGeneral">Cadastrar</button>
+                <button data-login="loginBtn" id="btnLogin" class="buttonsGeneral">Login</button>
+              </ul>
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+          </nav>
+</header>
+    <main>
+        <div data-hide="loginHide" id="divLoginHide">
+            <section class="login">
+                <h2>Login</h2>
+                <input data-email="emilLogin" type="email" placeholder="E-mail" required>
+                <input data-email="passLogin"  type="password" placeholder="Senha" required>
+                <button data-email="btnLogin"  class="buttonsGeneralBlack">Login</button>
+                <p>Ainda não tem uma conta? </p>
+                <p>Click em cadastrar no topo do menu.</p>
+               
+            </section>
+       
+        </div>
+        <div id="divCadastroHide">
+            <form class="formCadastro">
+                <h2>Cadastro</h2>
+    
+                <input id="inputNome" class="inputs" type="text" placeholder="Seu nome" id="inputNameC">
+                <input id="inputEmail" class="inputs" type="email" placeholder="Seu e-mail" id="inputEmailC">
+                <input id="inputSenha" class="inputs" type="text" placeholder="Sua senha" id="inputSenhaC">
+                <input id="inputProf" class="inputs" type="text" placeholder="Seu level profissional" id="inputWorkC">
+                <button class="buttonsGeneralBlack" id="btnRegister">Registrar</button>
+                <p>Já possui cadastro? </p>
+                <p>Click em login no topo do menu!</p>
+            </form>
+        </div>
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="/src/assets/imgEmpresas/tec.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>Pense Fora da Caixa!</h3>
+                <h5 class="light grey-text text-lighten-3">A sua empresa merece o Melhor.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="/src/assets/imgEmpresas/busi.jpg"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Sistemas de Tomada de Desisão</h3>
+                <h5 class="light grey-text text-lighten-3">Redes Neurais de Ponta.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="/src/assets/imgEmpresas/redes.jpg"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>Já Estamos no Futuro</h3>
+                <h5 class="light grey-text text-lighten-3">O futuro Te Espera Venha Fazer Parte.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="/src/assets/imgEmpresas/busi.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>Os Sistmas Mais Modernos!</h3>
+                <h5 class="light grey-text text-lighten-3">toda tecnologia suficientemente avançada é indistinguível de magia.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+            
+    
+       <br>
+       <br>
+      <br>      
   <div class="container">
     <div class="section">
-
-  
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">location_city</i></h2>
+            <h5 class="center">Pequenas e Médias Empresas</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">Com soluções cada vez mais 
+              leves, flexíveis e adaptadas às necessidades 
+              e orçamentos de pequenas e médias empresas, recomendado para empresas enquadradas nos regimes tributários EPP, 
+              ME, Simples Nacional.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">location_city</i></h2>
+            <h5 class="center">Prestadores de Serviçosd</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">Cada uma delas tem as suas necessidades e o sistema pode ser configurado para que tirem o máximo proveito do que é fundamental e
+               tudo integrado com a prefeitura de sua
+                cidade.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">location_city</i></h2>
+            <h5 class="center">Grandes Negócios</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">De uma rede de lojas online 
+              a uma distribuidora em <strong>marketplace</strong> , todas as empresas se beneficiam da eficiência e da segurança de um software empresarial de gestão de alta performance. Ideal para empresas de Débito e Crédito, tanto no Lucro Real 
+              quanto no Lucro Presumido.</p>
           </div>
         </div>
       </div>
@@ -79,48 +135,50 @@
     </div>
     <br><br>
   </div>
+        <section id="empresas">
+            <nav class="container blue-grey lighten-5
+            ">
+                <button id="btnTodos" class="buttonsGeneralBlack">Todos</button>
+                <button id="btnAutomotivo" class="buttonsGeneralBlack">Automotivo</button>
+                <button id="btnTi" class="buttonsGeneralBlack">TI</button>
+                <button id="btnAlimenticio" class="buttonsGeneralBlack">Alimentício</button>
+            </nav>
+            <ul id="listCompanies" class="listaEmpresas">
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4"></p>
+            </ul>
+        </section>
+        <div class="tech-slideshow">
+          <div class="mover-1"></div>
+          <div class="mover-2"></div>
+        </div>
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-            <li><a class="white-text" href="#!"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+    <footer class="page-footer light-blue accent-3">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+  
+  
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class="orange-text text-lighten-3">Rayner Tech</a>
+        </div>
+      </div>
+    </footer>
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./src/script/index.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
 </html>
