@@ -1,4 +1,4 @@
-import requestHome from "./request.js";
+import requestHome from "./request.js"
 class RenderHome {
     static renderEmpresas(data, filtro){
         const listCompanies = document.getElementById("listCompanies")
