@@ -1,0 +1,235 @@
+header{
+    height: 70px;
+}
+
+
+main .backgroundImg img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation:spin 20s linear infinite;
+    
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.btnMenu{
+    width: 70px;
+    font-size: 25px;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: none;
+}
+
+
+.container__show{
+    animation: showModal 800ms 1 forwards;
+    transform: translateY(100vw);
+    opacity: 0%;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height:100vw;
+
+}
+@keyframes showModal {
+    to{
+        transform: translateY(0vw);
+        opacity: 100%;
+        height:100vw;
+    }
+
+}
+.container__hide{
+    animation: hideModal 3000ms 1 forwards;
+    transform: translateY(0vw);
+    opacity: 100%;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height:100vw;
+
+}
+@keyframes hideModal {
+    to{
+        transform: translateY(100vw);
+        opacity: 0%;
+        height:100vw;
+    }
+
+}
+
+
+
+.container__show nav{
+    box-shadow:5px 5px 5px var(--color-1);
+    background-color: var(--color-2);
+    color: var(--color-1);
+
+    font-size: var(--text-1-size);
+    font-weight: var(--text-1-weight);
+
+    height: 60%;
+  
+}
+.container__show nav button{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-2);
+    color: var(--color-1);
+
+    font-size: var(--text-1-size);
+    font-weight: var(--text-1-weight);
+
+    border: none;
+}
+.container__show nav button:hover{
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.container__hide nav{
+    box-shadow:5px 5px 5px var(--color-1);
+    background-color: var(--color-2);
+    color: var(--color-1);
+  
+}
+.container__hide nav button{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-2);
+    color: var(--color-1);
+
+    font-size: var(--text-1-size);
+    font-weight: var(--text-1-weight);
+
+    border: none;
+
+}
+.container__hide nav button:hover{
+    box-shadow:5px 5px 5px var(--color-1);
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.section__pesquisa{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:5px 5px 5px var(--color-1);
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+.section__pesquisa input{
+    width: 80%;
+    height: 30px;   
+    position: relative;
+    border: none;
+    text-align: center;
+    background: #F1F3F5;
+    border-radius: 8px;
+}
+#pesquisa{
+    color: #ADB5BD;
+    position: absolute;
+    left: 12%;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    box-shadow:5px 5px 5px var(--color-1);
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+
+.user h2{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#container{
+
+    color: var(--color-1);
+    background: var(--color-2);
+
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    border: solid 2px var(--color-1);
+}
+#container #buttonX{
+    border: none;
+    border-radius: 50%;
+    background: var(--color-2);
+
+    position: fixed;
+    bottom: 81%;
+    left: 81%;
+
+    color: var(--color-1);
+    font-size: var(--text-1-size);
+
+    cursor: pointer;
+
+
+}
+#container h1{
+    position: absolute;
+    top: 3%;
+
+    font-size: var(--title-1-size);
+    font-weight: var(--title-1-weight);
+}
+
+
+/*BTN SAIR*/
+.user{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+}
+.user h1{
+    font-size: var(--title-1-size);
+    font-weight: var(--title-1-weight);
+}
+.sair{
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: solid 1px var(--color-1);
+
+    width: 50px;
+    height: 30px;
+    
+    border-radius: 10px;
+}
+.sair:hover{
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
